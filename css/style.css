@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif; 
+  color: #333; 
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  padding: 1rem;
+}
+
+ul li {
+  margin: 0 1rem;
+}
+
+ul li a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+ul li a:hover {
+  color: #ffcc00;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.image {
+  display: block;
+  margin: 1.5rem auto;
+  width: 90%;
+  max-width: 400px;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+body.index {
+  background-color: #e1f5fe;
+}
+
+.index h1 {
+  font-size: 2.5rem;
+  color: #0d47a1;
+}
+
+.index h3 {
+  color: #00796b;
+}
+
+.index ul {
+  background-color: #0288d1;
+}
+
+
+body.music {
+  background-color: #fff3e0;
+}
+
+.music h1 {
+  font-size: 2.5rem;
+  color: #d84315;
+}
+
+.music h3 {
+  color: #ff6f00;
+}
+
+.music ul {
+  background-color: #ff9800;
+}
+
+
+body.about_me {
+  background-color: #fce4ec;
+}
+
+.about_me h1 {
+  font-size: 2.5rem;
+  color: #c2185b;
+}
+
+.about_me h3 {
+  color: #d81b60;
+}
+
+.about_me ul {
+  background-color: #ec407a;
+}
+
+
+@media (max-width: 768px) {
+  .about_me section {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+
+.index section {
+  max-width: 1000px;
+}
+
+
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  ul li {
+    margin: 0.5rem 0;
+  }
+
+  section {
+    max-width: 100%;
+  }
+}
