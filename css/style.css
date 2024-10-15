@@ -6,6 +6,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 ul {
@@ -13,6 +15,7 @@ ul {
   justify-content: center;
   background-color: #222;
   padding: 1rem;
+  list-style-type: none;
 }
 
 ul li {
@@ -58,15 +61,6 @@ section iframe {
   max-width: 560px;
 }
 
-ul {
-  list-style-type: none;
-}
-
-body {
-  line-height: 1.6;
-  font-size: 1rem;
-}
-
 p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
@@ -86,8 +80,7 @@ body.index {
 }
 
 .index ul {
-  background-color: #0288d1;
-  color: white;
+  background-color: #333;
 }
 
 body.music {
@@ -104,8 +97,7 @@ body.music {
 }
 
 .music ul {
-  background-color: #ff9800;
-  color: white;
+  background-color: #333;
 }
 
 body.about_me {
@@ -122,8 +114,7 @@ body.about_me {
 }
 
 .about_me ul {
-  background-color: #ec407a;
-  color: white;
+  background-color: #333;
 }
 
 @media (max-width: 768px) {
@@ -150,4 +141,12 @@ body.about_me {
   section {
     max-width: 100%;
   }
+}
+
+.grey-box {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
