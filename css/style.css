@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Lobster&display=swap');
 
 html {
   background-image: url('../images/tech.jpg');
@@ -16,9 +15,9 @@ body {
 }
 
 nav {
-  margin-bottom: 2em;
-  background-color: #444;
+  background-color: rgba(30, 30, 30, 0.95);
   padding: 1em 0;
+  margin-bottom: 2em;
 }
 
 nav ul {
@@ -27,7 +26,6 @@ nav ul {
   justify-content: center;
   padding: 0;
   margin: 0;
-  background-color: transparent;
 }
 
 nav ul li {
@@ -36,9 +34,9 @@ nav ul li {
 
 nav ul li a {
   font-family: 'Lobster', cursive;
+  font-size: 1.5em;
   color: #fefefe;
   text-decoration: none;
-  font-size: 1.5em;
   transition: color 0.3s, transform 0.3s;
 }
 
@@ -48,6 +46,7 @@ nav ul li a:hover {
 }
 
 header {
+  text-align: center;
   padding: 1.5em 0;
 }
 
@@ -70,6 +69,7 @@ section {
   background-color: rgba(50, 50, 50, 0.9);
   width: 100%;
   max-width: 800px;
+  text-align: center;
 }
 
 #home-page section {
