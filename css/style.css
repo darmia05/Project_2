@@ -1,89 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+html {
+  background-image: url('../images/abstract-background.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
+  font-family: 'Roboto Slab', serif;
   line-height: 1.6;
-  background: #e0f7fa;
-  text-align: center;
+  color: #fefefe;
+  padding: 0 2em;
 }
 
-h1, h2, h3 {
-  color: #e53935;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  margin: 1rem 0;
-}
-
-ul {
-  list-style-type: none;
-}
-
-nav {
+nav ul {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  background-color: #00796b;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-around;
+  padding: 1em 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
-nav a {
-  color: white;
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: #fefefe;
   text-decoration: none;
-  margin: 0 2rem;
-  font-weight: bold;
-  border: 1px solid transparent;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: color 0.3s, transform 0.3s;
 }
 
-nav a:hover {
-  background-color: #ffd54f;
-  color: #000;
-  transform: scale(1.05);
+#home-page nav ul li a:hover {
+  color: #ff4081;
+  transform: scale(1.1);
 }
 
-.image {
-  display: block;
-  margin: 1rem auto;
-  max-width: 100%;
-  height: auto;
-  border-radius: 1rem;
+#favorite-music nav ul li a:hover {
+  color: #3f51b5;
+  transform: scale(1.1);
+}
+
+#my-music nav ul li a:hover {
+  color: #4caf50;
+  transform: scale(1.1);
+}
+
+header {
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+h1, h2 {
+  font-family: 'Roboto Slab', serif;
+}
+
+#home-page h1, #home-page h2 {
+  color: #ff4081;
+}
+
+#favorite-music h1, #favorite-music h2 {
+  color: #3f51b5;
+}
+
+#my-music h1, #my-music h2 {
+  color: #4caf50;
+}
+
+main {
+  max-width: 85%;
+  margin: 3em auto;
+}
+
+#home-page main {
+  width: 900px;
 }
 
 section {
-  margin: 2rem auto;
+  margin-bottom: 3em;
+  padding: 1.5em;
+  border-radius: 8px;
+  background-color: rgba(50, 50, 50, 0.9);
+}
+
+#home-page section {
+  border: 3px solid #ff4081;
+}
+
+#favorite-music section {
+  border: 3px dotted #3f51b5;
+}
+
+#my-music section {
+  border: 3px dashed #4caf50;
+}
+
+#home-page img {
+  border: 3px solid #ff4081;
+  border-radius: 5px;
+}
+
+#favorite-music img {
+  border: 3px dotted #3f51b5;
+  border-radius: 5px;
+}
+
+#my-music img {
+  border: 3px dashed #4caf50;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
   padding: 1.5rem;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
-section:nth-of-type(odd) {
-  background-color: #ffe0b2;
-}
-
-section:nth-of-type(even) {
-  background-color: #bbdefb;
-}
-
-@media (max-width: 768px) {
-  nav {
+@media (max-width: 600px) {
+  nav ul {
     flex-direction: column;
-  }
-
-  nav a {
-    margin: 1rem 0;
+    align-items: center;
   }
 
   body {
-    margin: 0;
+    padding: 0 1em;
   }
+}
 
-  section {
-    margin: 1rem;
-  }
+iframe {
+  border: 2px solid #fefefe;
+  margin: 1.5em 0;
+  width: 100%;
+  max-width: 560px;
+  border-radius: 8px;
 }
