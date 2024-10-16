@@ -18,7 +18,7 @@ body {
 ul {
   display: flex;
   justify-content: center;
-  background-color: #222;
+  background-color: black;
   padding: 1rem;
 }
 
@@ -80,7 +80,7 @@ p {
 }
 
 body.index {
-  background-color: #e1f5fe;
+  background-color: black;
 }
 
 .index h1 {
@@ -93,12 +93,12 @@ body.index {
 }
 
 .index ul {
-  background-color: #0288d1;
+  background-color: black;
   color: white;
 }
 
 body.music {
-  background-color: #fff3e0;
+  background-color: black;
 }
 
 .music h1 {
@@ -111,12 +111,12 @@ body.music {
 }
 
 .music ul {
-  background-color: #ff9800;
+  background-color: black;
   color: white;
 }
 
 body.about_me {
-  background-color: #fce4ec;
+  background-color: black;
 }
 
 .about_me h1 {
@@ -129,7 +129,7 @@ body.about_me {
 }
 
 .about_me ul {
-  background-color: #ec407a;
+  background-color: black;
   color: white;
 }
 
