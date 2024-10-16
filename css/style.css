@@ -8,7 +8,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
+  color: black;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -84,11 +84,11 @@ body.index {
 
 .index h1 {
   font-size: 2.5rem;
-  color: #0d47a1;
+  color: #000000;
 }
 
 .index h3 {
-  color: #00796b;
+  color: #000000;
 }
 
 .index ul {
@@ -101,11 +101,11 @@ body.music {
 
 .music h1 {
   font-size: 2.5rem;
-  color: #d84315;
+  color: #000000;
 }
 
 .music h3 {
-  color: #ff6f00;
+  color: #000000;
 }
 
 .music ul {
@@ -118,11 +118,11 @@ body.about_me {
 
 .about_me h1 {
   font-size: 2.5rem;
-  color: #c2185b;
+  color: #000000;
 }
 
 .about_me h3 {
-  color: #d81b60;
+  color: #000000;
 }
 
 .about_me ul {
