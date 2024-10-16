@@ -8,7 +8,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #ff0000;
+  color: #00BFFF;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -26,7 +26,7 @@ ul li {
 }
 
 ul li a {
-  color: #ff0000;
+  color: #00BFFF;
   font-weight: 600;
   font-size: 1.2rem;
 }
@@ -38,6 +38,7 @@ ul li a:hover {
 h1, h2, h3 {
   text-align: center;
   margin-bottom: 1rem;
+  color: #00BFFF;
 }
 
 section {
@@ -76,6 +77,7 @@ body {
 p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
+  color: #00BFFF;
 }
 
 body.index {
@@ -84,11 +86,9 @@ body.index {
 
 .index h1 {
   font-size: 2.5rem;
-  color: #ff0000;
 }
 
 .index h3 {
-  color: #ff0000;
 }
 
 .index ul {
@@ -101,11 +101,9 @@ body.music {
 
 .music h1 {
   font-size: 2.5rem;
-  color: #ff0000;
 }
 
 .music h3 {
-  color: #ff0000;
 }
 
 .music ul {
@@ -118,11 +116,9 @@ body.about_me {
 
 .about_me h1 {
   font-size: 2.5rem;
-  color: #ff0000;
 }
 
 .about_me h3 {
-  color: #ff0000;
 }
 
 .about_me ul {
