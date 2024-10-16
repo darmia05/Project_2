@@ -3,9 +3,9 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: #333;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
 }
 
 ul {
@@ -13,15 +13,17 @@ ul {
   justify-content: center;
   background-color: #222;
   padding: 1rem;
+  list-style-type: none;
 }
 
 ul li {
-  margin: 0 1rem;
+  margin: 0 1.5rem;
 }
 
 ul li a {
   color: white;
   font-weight: 600;
+  text-decoration: none;
   font-size: 1.2rem;
 }
 
@@ -29,15 +31,10 @@ ul li a:hover {
   color: #ffcc00;
 }
 
-h1, h2, h3 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
 section {
   margin: 2rem auto;
-  padding: 1rem;
-  max-width: 800px;
+  padding: 2rem;
+  max-width: 90%;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -46,48 +43,32 @@ section {
 .image {
   display: block;
   margin: 1.5rem auto;
-  width: 90%;
-  max-width: 400px;
-}
-
-section iframe {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  max-width: 560px;
-}
-
-ul {
-  list-style-type: none;
-}
-
-body {
-  line-height: 1.6;
-  font-size: 1rem;
+  max-width: 90%;
 }
 
 p {
+  color: white;
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
+  text-align: justify;
 }
 
 body.index {
   background-color: #e1f5fe;
 }
 
-.index h1 {
-  font-size: 2.5rem;
+.index section {
+  max-width: 1200px;
+}
+
+.index h1, .index h2 {
   color: #0d47a1;
+  text-align: center;
 }
 
 .index h3 {
   color: #00796b;
-}
-
-.index ul {
-  background-color: #0288d1;
-  color: white;
+  text-align: center;
 }
 
 body.music {
@@ -99,13 +80,18 @@ body.music {
   color: #d84315;
 }
 
-.music h3 {
+.music h2 {
   color: #ff6f00;
 }
 
 .music ul {
-  background-color: #ff9800;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.music li {
+  font-size: 1.4rem;
 }
 
 body.about_me {
@@ -115,26 +101,16 @@ body.about_me {
 .about_me h1 {
   font-size: 2.5rem;
   color: #c2185b;
-}
-
-.about_me h3 {
-  color: #d81b60;
+  text-align: center;
 }
 
 .about_me ul {
   background-color: #ec407a;
-  color: white;
+  padding: 1rem;
 }
 
-@media (max-width: 768px) {
-  .about_me section {
-    max-width: 100%;
-    padding: 1.5rem;
-  }
-}
-
-.index section {
-  max-width: 1000px;
+.about_me li {
+  font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
@@ -149,5 +125,6 @@ body.about_me {
 
   section {
     max-width: 100%;
+    padding: 1rem;
   }
 }
