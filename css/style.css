@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
 html {
-  background-image: url('../images/abstract-background.png');
+  background-image: url('../images/tech.png');
   background-size: cover;
   background-attachment: fixed;
 }
@@ -11,19 +11,24 @@ body {
   line-height: 1.6;
   color: #fefefe;
   padding: 0 2em;
+  text-align: center;
+}
+
+nav {
+  margin-bottom: 2em;
 }
 
 nav ul {
   list-style: none;
-  display: flex;
-  justify-content: space-around;
+  display: inline-flex;
+  justify-content: center;
   padding: 1em 0;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.85);
 }
 
 nav ul li {
-  position: relative;
+  margin: 0 1.5em;
 }
 
 nav ul li a {
@@ -32,23 +37,12 @@ nav ul li a {
   transition: color 0.3s, transform 0.3s;
 }
 
-#home-page nav ul li a:hover {
+nav ul li a:hover {
   color: #ff4081;
   transform: scale(1.1);
 }
 
-#favorite-music nav ul li a:hover {
-  color: #3f51b5;
-  transform: scale(1.1);
-}
-
-#my-music nav ul li a:hover {
-  color: #4caf50;
-  transform: scale(1.1);
-}
-
 header {
-  text-align: center;
   padding: 1.5em 0;
 }
 
@@ -56,25 +50,12 @@ h1, h2 {
   font-family: 'Roboto Slab', serif;
 }
 
-#home-page h1, #home-page h2 {
-  color: #ff4081;
-}
-
-#favorite-music h1, #favorite-music h2 {
-  color: #3f51b5;
-}
-
-#my-music h1, #my-music h2 {
-  color: #4caf50;
-}
-
 main {
   max-width: 85%;
   margin: 3em auto;
-}
-
-#home-page main {
-  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 section {
@@ -82,6 +63,8 @@ section {
   padding: 1.5em;
   border-radius: 8px;
   background-color: rgba(50, 50, 50, 0.9);
+  width: 100%;
+  max-width: 800px;
 }
 
 #home-page section {
@@ -96,19 +79,9 @@ section {
   border: 3px dashed #4caf50;
 }
 
-#home-page img {
-  border: 3px solid #ff4081;
+img {
   border-radius: 5px;
-}
-
-#favorite-music img {
-  border: 3px dotted #3f51b5;
-  border-radius: 5px;
-}
-
-#my-music img {
-  border: 3px dashed #4caf50;
-  border-radius: 5px;
+  margin: 1.5em 0;
 }
 
 footer {
