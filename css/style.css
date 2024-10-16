@@ -17,7 +17,9 @@ body {
 nav {
   background-color: rgba(30, 30, 30, 0.95);
   padding: 1em 0;
-  margin-bottom: 2em;
+  margin: 0 auto 2em;
+  max-width: 800px;
+  border-radius: 8px;
 }
 
 nav ul {
