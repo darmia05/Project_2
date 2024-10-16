@@ -1,18 +1,15 @@
+/* Importing a custom Google font (e.g., Montserrat) */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
-html {
-  background-image: url('../images/tech.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 body {
-  font-family: 'Montserrat', sans-serif; 
-  color: #b3a8a8; 
+  font-family: 'Montserrat', sans-serif; /* Imported font */
+  color: #333; /* Universal text color */
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
 }
 
+/* Horizontal navigation at the top of each page */
 ul {
   display: flex;
   justify-content: center;
@@ -34,6 +31,7 @@ ul li a:hover {
   color: #ffcc00;
 }
 
+/* Global styling for all three pages */
 h1, h2, h3 {
   text-align: center;
   margin-bottom: 1rem;
@@ -48,6 +46,7 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Style applied to images */
 .image {
   display: block;
   margin: 1.5rem auto;
@@ -55,6 +54,7 @@ section {
   max-width: 400px;
 }
 
+/* Five common style elements applied to each page */
 ul {
   list-style-type: none;
 }
@@ -69,6 +69,9 @@ p {
   margin-bottom: 1.5rem;
 }
 
+/* Specific page styling */
+
+/* Resume Page (index.html) */
 body.index {
   background-color: #e1f5fe;
 }
@@ -86,6 +89,7 @@ body.index {
   background-color: #0288d1;
 }
 
+/* Music Page (music.html) */
 body.music {
   background-color: #fff3e0;
 }
@@ -103,6 +107,7 @@ body.music {
   background-color: #ff9800;
 }
 
+/* About Me Page (about_me.html) */
 body.about_me {
   background-color: #fce4ec;
 }
@@ -120,6 +125,7 @@ body.about_me {
   background-color: #ec407a;
 }
 
+/* Fluid layout for About Me Page */
 @media (max-width: 768px) {
   .about_me section {
     max-width: 100%;
@@ -127,10 +133,12 @@ body.about_me {
   }
 }
 
+/* Fixed-width layout for Resume Page */
 .index section {
   max-width: 1000px;
 }
 
+/* Responsive design for smaller screens */
 @media (max-width: 768px) {
   ul {
     flex-direction: column;
