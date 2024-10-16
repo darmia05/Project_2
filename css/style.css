@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 html {
@@ -8,7 +9,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #00BFFF;
+  color: #333;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -26,7 +27,7 @@ ul li {
 }
 
 ul li a {
-  color: #00BFFF;
+  color: white;
   font-weight: 600;
   font-size: 1.2rem;
 }
@@ -38,7 +39,6 @@ ul li a:hover {
 h1, h2, h3 {
   text-align: center;
   margin-bottom: 1rem;
-  color: #00BFFF;
 }
 
 section {
@@ -58,10 +58,10 @@ section {
 }
 
 section iframe {
-  display: block;            
-  margin-left: auto;          
-  margin-right: auto;         
-  width: 80%;               
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   max-width: 560px;
 }
 
@@ -77,52 +77,60 @@ body {
 p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
-  color: #00BFFF;
 }
 
 body.index {
-  background-color: #ffffff;
+  background-color: #e1f5fe;
 }
 
 .index h1 {
   font-size: 2.5rem;
+  color: #0d47a1;
 }
 
 .index h3 {
+  color: #00796b;
 }
 
 .index ul {
   background-color: #0288d1;
+  color: white;
 }
 
 body.music {
-  background-color: #ffffff;
+  background-color: #fff3e0;
 }
 
 .music h1 {
   font-size: 2.5rem;
+  color: #d84315;
 }
 
 .music h3 {
+  color: #ff6f00;
 }
 
 .music ul {
   background-color: #ff9800;
+  color: white;
 }
 
 body.about_me {
-  background-color: #ffffff;
+  background-color: #fce4ec;
 }
 
 .about_me h1 {
   font-size: 2.5rem;
+  color: #c2185b;
 }
 
 .about_me h3 {
+  color: #d81b60;
 }
 
 .about_me ul {
   background-color: #ec407a;
+  color: white;
 }
 
 @media (max-width: 768px) {
