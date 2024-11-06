@@ -7,10 +7,11 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #333;
   margin: 0;
   padding: 0;
+  background-color: transparent;
   line-height: 1.6;
   font-size: 1rem;
 }
@@ -50,7 +51,6 @@ section {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative;
 }
 
 .image {
@@ -66,11 +66,6 @@ section iframe {
   margin-right: auto;
   width: 80%;
   max-width: 560px;
-}
-
-p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
 }
 
 body.index {
@@ -127,12 +122,18 @@ body.about_me {
   color: white;
 }
 
-@media (max-width: 48em) {
+@media (max-width: 768px) {
   .about_me section {
     max-width: 100%;
     padding: 1.5rem;
   }
-  
+}
+
+.index section {
+  max-width: 62.5rem;
+}
+
+@media (max-width: 768px) {
   ul {
     flex-direction: column;
     padding: 0;
@@ -147,18 +148,8 @@ body.about_me {
   }
 }
 
-.index section {
-  max-width: 62.5rem;
-  float: left;
-}
-
-.image {
-  position: absolute;
-  left: 5%;
-  width: 50%;
-}
-
-.music h1 {
-  position: relative;
-  top: 20px;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
